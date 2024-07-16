@@ -12,6 +12,7 @@ const auth = async (req, res, next) => {
       next();
     } else {
       return res.status(404).json({ message: "invalid user" });
+      
     }
   } else {
     return res.status(400).json({ message: "Give me your token" });
